@@ -179,7 +179,7 @@ const listas = Promise.race([
 ]);
 
 /* ---------- Música: Las Mañanitas ---------- */
-const musica = new Audio('mananitas.mp3');
+const musica = new Audio('audio/mananitas.mp3');
 musica.loop = true; musica.preload = 'auto'; musica.volume = 0;
 const bSonido = document.getElementById('sonido');
 musica.addEventListener('error', () => { bSonido.style.display = 'none'; });   // sin archivo: sigue en silencio
